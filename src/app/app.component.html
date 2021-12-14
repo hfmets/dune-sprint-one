@@ -1,1 +1,19 @@
-<app-pokemon-page></app-pokemon-page>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item"></a>
+    <a class="navbar-burger" #navBurger aria-label="menu" aria-expanded="false" data-target="navbarBasic"
+      (click)="toggleNavMenu()">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasic" class="navbar-menu" #navMenu>
+    <div class="navbar-end">
+      <a routerLink="/dune-quotes" class="navbar-item">Dune Quotes</a>
+      <a class="navbar-item">Stretch Goal</a>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

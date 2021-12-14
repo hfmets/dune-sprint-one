@@ -1,0 +1,17 @@
+.dune-hero {
+  background-color: #e14a2d;
+}
+
+.hero-body .title, .hero-body .subtitle{
+  color: white;
+}
+
+.bottom-half {
+  height: 100%;
+  background-color: #5a8692;
+}
+
+.quote-item {
+  height: 100%;
+  margin: 20px
+}
