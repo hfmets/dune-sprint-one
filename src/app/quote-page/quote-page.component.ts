@@ -17,7 +17,16 @@ export class QuotePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.quoteSvc.getRandomQuotes().subscribe(results => this.quotes = results);
-    this.quoteSvc.getBooks().subscribe(results => this.books = results);
+    this.quoteSvc.getBooks().subscribe(results => this.books = results.sort((a, b) => {
+      if (a.year < b.year) {
+        return -1;
+      }
+      if (a.year > b.year) {
+        return 1;
+      }
+
+      return 0;
+    }));
   }
 
 
