@@ -5,5 +5,5 @@ export interface Stock {
       date: string;
       price: number;
     }
-  ]
+  ];
 }
